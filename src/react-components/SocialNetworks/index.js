@@ -10,7 +10,11 @@ import report2 from "./static/report2.pdf";
 import poster from "./static/poster.PNG";
 // Importing ThemeProvider
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-
+import {
+  paletteBlackRice,
+  paletteBlackYellow,
+  paletteBlue,
+} from "../../colorPalettle";
 const theme = createTheme({
   palette: {
     background: {
@@ -30,12 +34,17 @@ class SocialNetworks extends React.Component {
         <CssBaseline />
         <Box
           className="SocialNetworks"
-          sx={{ marginX: "5vw", paddingBottom: "5vw" }}
+          sx={{ paddingX: "5vw", paddingBottom: "10vw", 
+          zIndex: "-999",
+          overflow: "hidden",
+          backgroundImage: `linear-gradient(${paletteBlue[0]}, 
+            ${paletteBlue[4]},
+            ${paletteBlue[4]}, ${paletteBlue[0]})`}}
         >
           <Box sx={{ marginBottom: "5vw" }}>
             <IconButton
               aria-label="report"
-              onClick={() => window.open("/about")}
+              onClick={() => window.open("/")}
             >
               <MeetingRoomIcon style={{ fontSize: 50 }} />
               <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
@@ -85,25 +94,26 @@ class SocialNetworks extends React.Component {
             until the algorithm identifies the same user within the cluster from
             the user's local neighborhood.
           </Typography>
-          <Typography variant="h6" sx={{ marginBottom: "3vw" }}>
+          <Typography variant="h6" >
             In our analysis of user interactions and characteristics on Twitter,
             we aim to achieve two primary goals:
+            </Typography>
             <Typography variant="h6">
               (1) Community Core: We start with a randomly chosen user and aim
               to identify the core users of the community to which that user
               belongs. These core users are central figures within their
               respective communities.
             </Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" sx={{ marginBottom: "3vw" }}>
               (2) Community Expansion: Building on the identification of core
               users, we expand our focus to discover other users and map out the
               entire community. This allows us to understand the broader
               structure of the community.
             </Typography>
-          </Typography>
           <Typography variant="h6">
             To assess a user's activity within their neighborhood, we have
             defined two key metrics:
+            </Typography>
             <Typography variant="h6">
               (1) Production: This metric measures a user's contribution to the
               community by counting the number of retweets their original tweets
@@ -114,7 +124,6 @@ class SocialNetworks extends React.Component {
               by counting the number of retweets they make of original tweets
               from other users within the community.
             </Typography>
-          </Typography>
           <Box sx={{ padding: "2vw", textAlign: "center" }}>
             <Paper
               style={{

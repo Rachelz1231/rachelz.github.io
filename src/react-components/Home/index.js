@@ -3,20 +3,16 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useRef, useEffect } from "react";
 
 // Importing components
-import Header from "./../Header";
-import NavBar from "./../NavBar";
 import Footer from "./../Footer";
 import AboutMe from "./aboutMe";
 import WorkExperiences from "./workExperiences";
 import ResearchExperiences from "./ResearchExperiences/researchExperiences";
 import DataAnalysis from "./DataAnalysis/dataAnalysis";
+import LifeBeyond from "./LifeBeyond/lifeBeyond";
 import Contact from "./contact";
 
 // Importing images
-import eccho from "./static/eccho.png";
-import IconButton from "@mui/material/IconButton";
-import { Box, Chip, Button, Typography, Zoom, Slide } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import { orange, yellow, indigo, red, grey, blue } from "@mui/material/colors";
@@ -42,7 +38,7 @@ const theme = createTheme({
 });
 
 /* Component for the Home page */
-export default function Home({ appState }) {
+const Home = () => {
   const aboutMeInfo = useRef(null);
   const projects = useRef(null);
   const dataAnalysis = useRef(null);
@@ -82,23 +78,25 @@ export default function Home({ appState }) {
           zIndex: "-999",
           overflow: "hidden",
           backgroundImage: `linear-gradient(${paletteBlackYellow[0]},
-            ${paletteBlackYellow[0]},
             ${paletteBlue[4]},
             ${paletteBlackRice[4]},
             ${paletteBlackRice[4]},
             ${paletteBlackYellow[0]}, 
-            ${paletteBlackYellow[1]}, 
             ${paletteBlackYellow[0]}, 
-            ${paletteBlue[0]})`,
+            ${paletteBlackYellow[1]}, ${paletteBlackYellow[1]}, 
+            ${paletteBlue[0]},${paletteBlue[0]},
+            ${paletteBlackYellow[0]})`,
         }}
       >
         <AboutMe></AboutMe>
-        <WorkExperiences></WorkExperiences>
         <ResearchExperiences></ResearchExperiences>
+        <WorkExperiences></WorkExperiences>
         <DataAnalysis></DataAnalysis>
+        <LifeBeyond></LifeBeyond>
         <Contact></Contact>
         <Footer />
       </Box>
     </ThemeProvider>
   );
 }
+export default Home;

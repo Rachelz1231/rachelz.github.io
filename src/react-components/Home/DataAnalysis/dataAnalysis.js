@@ -1,11 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import {
-  Box,
-  Typography,
-  Slide,
-  Grid,
-  IconButton,
-} from "@mui/material";
+import { Box, Typography, Slide, Grid, IconButton } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -16,9 +10,7 @@ import Factorial from "./factorial";
 import MlsPlayer from "./mlsPlayer";
 import CollegeAdmission from "./collegeAdmission";
 
-import {
-  paletteBlackRice,
-} from "../../../colorPalettle";
+import { paletteBlackRice } from "../../../colorPalettle";
 
 // import "./style.css";
 
@@ -117,9 +109,8 @@ export default function DataAnalysis() {
       className="dataAnalysis"
       ref={dataRef}
       sx={{
-        width: "100%",
         color: `${paletteBlackRice[4]}`,
-        marginTop: { xs: "20vw", md: "0" },
+        marginY: "20vw",
         textAlign: "center",
       }}
     >
@@ -135,10 +126,21 @@ export default function DataAnalysis() {
               // margin: "1vw",
               marginBottom: "5vw",
               fontSize: { xs: "6vw", md: "54px" },
-              fontWeight: 'bold'
+              fontWeight: "bold",
+              paddingX: "10vw",
             }}
           >
             Data Analysis
+            <Typography sx={{fontSize: { xs: "2.5vw", md: "20px" },}}>
+              Welcome to my collection of statistical data analysis projects. As
+              a Computer Science student with a passion for Statistics, I've
+              dedicated time to exploring the power of data beyond the realm of
+              CS. This section showcases my journey through various statistical
+              projects, demonstrating how data can reveal patterns, predict
+              trends, and provide deep insights. Each project here is a
+              reflection of my commitment to understanding and leveraging
+              statistical analysis in diverse contexts.
+            </Typography>
           </Typography>
         </Slide>
       </Box>

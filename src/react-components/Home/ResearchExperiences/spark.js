@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import spark2 from "../static/spark2.png";
 import iai from "../static/iai.jpg";
-import { Box, Typography, Zoom, Slide, Paper } from "@mui/material";
+import { Box, Typography, Zoom, Slide, Paper, Button } from "@mui/material";
 
 /* The Spark Component */
 export default function Spark() {
@@ -33,6 +33,7 @@ export default function Spark() {
         width: "100%",
         marginTop: "10vw",
         marginBottom: "25vw",
+        color: { xs: "white", md: "black" },
       }}
     >
       <Box ref={sparkInfoRef}>
@@ -96,10 +97,23 @@ export default function Spark() {
               width: { xs: "100%" },
               paddingX: "5vw",
               paddingBottom: "2vw",
+              color: { xs: "white", md: "black" },
             }}
           >
             Understanding the Role of Large Language Models in Personalizing and
             Scaffolding Strategies to Combat Academic Procrastination
+            <Typography
+              sx={{
+                fontSize: { xs: "2vw", md: "24px" },
+                justifyContent: "center",
+                color: { xs: "white" },
+              }}
+            >
+              Our paper, where I serve as the second author, has been accepted by CHI 2024!
+            </Typography>
+            <Button variant="contained" onClick={() => window.open("https://arxiv.org/pdf/2312.13581.pdf")}>
+              Dive into our findings in the preprint here
+            </Button>
           </Typography>
         </Slide>
         <Slide
@@ -116,6 +130,7 @@ export default function Spark() {
               height: { xs: "auto", lg: "720px" },
               paddingX: "5vw",
               paddingBottom: "3vw",
+              color: { xs: "white", md: "black" },
             }}
           >
             Traditional interventions for academic procrastination often fail to
@@ -285,13 +300,13 @@ export default function Spark() {
               textAlign: "center",
             }}
           >
-            Our results highlight the necessity for LLMs to provide structured,
+            {/* Our results highlight the necessity for LLMs to provide structured,
             deadline-oriented steps and enhanced user support mechanisms.
             Additionally, our results surface the need for an adaptive approach
             to questioning based on factors like busyness. These findings offer
             crucial design implications for the development of LLM-based tools
             for managing procrastination while cautioning the use of LLMs for
-            therapeutic guidance.
+            therapeutic guidance. */}
           </Typography>
         </Slide>
       </Box>

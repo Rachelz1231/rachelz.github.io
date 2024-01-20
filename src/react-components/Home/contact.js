@@ -19,22 +19,32 @@ import EmailIcon from "@mui/icons-material/Email";
 export default function Contact() {
   const aboutMeInfoBox = useRef(null);
   return (
-    <Box className="contact"
-    sx={{
-      width: "100%",
-      color: `${paletteBlackRice[4]}`,
-      marginTop: { xs: "20vw", md: "0" },
-      textAlign: "center",
-    }}>
+    <Box
+      className="contact"
+      sx={{
+        width: "100%",
+        color: `${paletteBlackRice[5]}`,
+        marginY: { xs: "20vw"},
+        textAlign: "center",
+      }}
+    >
       <Typography
         sx={{
           // margin: "1vw",
           marginBottom: "5vw",
           fontSize: { xs: "6vw", md: "54px" },
           fontWeight: "bold",
+          paddingX: "10vw",
         }}
       >
-        Contact
+        Get In Touch
+        <Typography sx={{fontSize: { xs: "2.5vw", md: "20px" , lg: "30px" },}}>
+          Feel free to reach out for discussions, inquiries, or collaborative
+          ideas related to my work. I welcome the opportunity to explore
+          collaborative possibilities and learn from each other's insights and
+          experiences. Your questions and ideas are always appreciated, and I
+          look forward to the potential of working together.
+        </Typography>
       </Typography>
       <Grid
         className="contact"
@@ -194,10 +204,12 @@ export default function Contact() {
               />
             </IconButton>
             <Typography
-              sx={{
-                // display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
-              }}
+              sx={
+                {
+                  // display: { xs: "inline-block", sm: "block" },
+                  //width: { xs: "20vw", sm: "auto" },
+                }
+              }
             >
               rachelz1231@gmail.com
             </Typography>
@@ -229,10 +241,12 @@ export default function Contact() {
               <EmailIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
             </IconButton>
             <Typography
-              sx={{
-                // display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
-              }}
+              sx={
+                {
+                  // display: { xs: "inline-block", sm: "block" },
+                  //width: { xs: "20vw", sm: "auto" },
+                }
+              }
             >
               yuchen.zeng@mail.utoronto.ca
             </Typography>

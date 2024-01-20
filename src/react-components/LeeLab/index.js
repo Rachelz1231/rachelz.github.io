@@ -33,7 +33,7 @@ class LeeLab extends React.Component {
           <Box sx={{ marginBottom: "5vw" }}>
             <IconButton
               aria-label="report"
-              onClick={() => window.open("/about")}
+              onClick={() => window.open("/")}
             >
               <MeetingRoomIcon style={{ fontSize: 50 }} />
               <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>

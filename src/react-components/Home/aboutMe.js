@@ -66,9 +66,10 @@ export default function AboutMe() {
               }}
             >
               Welcome to my website! I am a fourth-year student pursuing a
-              Computer Science Specialist and Statistics Major in University of
-              Toronto. I am interested in Artificial Intelligence, Web And
-              Internet Technologies, and Computer Systems.
+              Computer Science Specialist and Statistics Major at the University
+              of Toronto. My concentration is in Artificial Intelligence and Web
+              Technologies. Currently, my research interest lies in human-AI
+              collaboration and interaction.
             </Typography>
           </Zoom>
         </Paper>

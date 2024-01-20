@@ -8,6 +8,8 @@ import {
   paletteBlueOrange,
 } from "../../../colorPalettle";
 
+import { useNavigate } from 'react-router-dom';
+
 // import "./style.css";
 
 /* The SocialNetworks Component */
@@ -28,16 +30,17 @@ export default function SocialNetworks() {
     observer.observe(socialRef.current);
     return () => observer.disconnect();
   }, []);
-
+  const navigate = useNavigate();
   return (
     <Box
       className="socialNetworks"
       ref={socialRef}
       sx={{
         width: "100%",
-        marginTop: "10vw",
+        // marginTop: "10vw",
         color: "white",
         position: "relative",
+        marginY: "20vw", 
         // backgroundImage: `url(${socialNetworks})`,
       }}
     >
@@ -103,7 +106,7 @@ export default function SocialNetworks() {
               students and pro- fessors at the ROP Fair, in 2022.
             </Typography>
             <IconButton
-              onClick={() => window.open("/research/social-networks")}
+              onClick={() => navigate("/research/social-networks")}
             >
               {/* <PictureAsPdfIcon style={{ fontSize: 50, color: "white" }} /> */}
               <Typography sx={{color: "white", fontSize: { xs: "2.5vw", md: "20px" } }}>

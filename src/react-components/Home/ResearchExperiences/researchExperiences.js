@@ -52,7 +52,7 @@ export default function ResearchExperiences() {
               fontWeight: 'bold'
             }}
           >
-            Research Experiences
+            My Research
           </Typography>
         </Slide>
       </Box>
