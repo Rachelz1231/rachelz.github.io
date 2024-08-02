@@ -34,7 +34,7 @@ export default function MlsPlayer() {
       >
         MLS Player Annual Earning Analysis
       </Typography>
-      <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
         Explored the relationship between annual earnings of MLS players and
         their performance, constructing a valuable linear regression model for
         the soccer market. This model helps soccer clubs accurately estimate a
@@ -44,7 +44,7 @@ export default function MlsPlayer() {
 
       <IconButton aria-label="pdf" onClick={() => window.open(pdf)}>
         <PictureAsPdfIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
         Open Report
         </Typography>
       </IconButton>

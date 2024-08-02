@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Box, Typography, Zoom, Slide, IconButton, Paper } from "@mui/material";
+import { Box, Typography, Zoom, Slide, IconButton, Paper, Button } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import classroom from "./static/classroom.png";
 import {
@@ -34,11 +34,11 @@ export default function VolunteerTeaching() {
   const navigate = useNavigate();
   return (
     <Box
-      className="socialNetworks"
+      className="vt"
       ref={socialRef}
       sx={{
         width: "100%",
-        position: "relative",
+        height: {xs: "50vw", md: "30vw"},
       }}
     >
       <Box
@@ -55,7 +55,7 @@ export default function VolunteerTeaching() {
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
-                height: "30vw",
+                height: {xs: "50vw", md: "30vw"},
                 backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
                     ${paletteBlue[0]})`,
                 position: "absolute",
@@ -72,8 +72,8 @@ export default function VolunteerTeaching() {
                   backgroundColor: "black",
                   backgroundPosition: "center",
                   backgroundSize: "150%",
-                  width: { xs: "30vw" },
-                  height: { xs: "30vw" },
+                  width: {xs: "50vw", md: "30vw"},
+                  height: {xs: "50vw", md: "30vw"},
                 }}
               ></Paper>
             </Box>
@@ -82,13 +82,13 @@ export default function VolunteerTeaching() {
                 height: "30vw",
                 position: "relative",
                 paddingY: { xs: "2vw", md: "5vw" },
-                paddingLeft: "30vw",
-                paddingRight: "10vw",
+                paddingLeft:  { xs: "50vw", md: "30vw"},
+                paddingRight: { xs: "2vw", lg: "10vw"},
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "2.5vw", md: "20px", lg: "30px" },
+                  fontSize: { xs: "20px", lg: "30px" },
                   paddingX: "5vw",
                   paddingBottom: { md: "3vw" },
                   zIndex: 2,
@@ -103,9 +103,9 @@ export default function VolunteerTeaching() {
                 onClick={() => navigate("/extracurricular/volunteer-teaching")}
               >
                 {/* <PictureAsPdfIcon style={{ fontSize: 50, color: "white" }} /> */}
-                <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+                <Button variant="outlined" sx={{ fontSize: "20px" }}>
                   Click Here to Learn More
-                </Typography>
+                </Button>
               </IconButton>
             </Box>
           </Box>

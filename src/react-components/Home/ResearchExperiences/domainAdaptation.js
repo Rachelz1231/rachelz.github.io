@@ -32,7 +32,7 @@ export default function DomainAdaptation() {
       sx={{
         width: { xs: "100%", lg: "70%" },
         marginTop: "5vw",
-        marginX: "auto"
+        marginX: "auto",
       }}
     >
       <Paper
@@ -41,14 +41,12 @@ export default function DomainAdaptation() {
           borderRadius: "50%",
           backgroundColor: `${paletteBlueOrange[2]}`,
           color: `${paletteBlueOrange[4]}`,
-          // left: { xs: `calc(-300px + 25vw)`, md: "0"},"
-          marginTop: {lg: "10vw"},
-          marginX:{ xs: "-25vw", md: "auto"},
-          width: { xs: "150vw", md: "1170px"},
-          height: { xs: "150vw", md: "1170px"},
-          paddingTop: { xs: "7vw", md: "10vw", lg: "120px" },
-          paddingX: { xs: "30vw", md: `calc(225px - 5vw)`},
-          // boxShadow:`0 0 8px 8px white inset`,
+          marginTop: { lg: "10vw" },
+          marginX: { xs: "-50vw", md: "auto" },
+          width: { xs: "200vw", md: "1170px" },
+          height: { xs: "200vw", md: "1170px" },
+          paddingTop: { xs: "20vw", md: "10vw", lg: "120px" },
+          paddingX: { xs: "50vw", md: `calc(225px - 5vw)` },
           boxShadow: `inset 0 -10 30 -30`,
         }}
       >
@@ -60,10 +58,9 @@ export default function DomainAdaptation() {
             container={domainTitleRef.current}
           >
             <Box sx={{ textAlign: "center" }}>
-              <Typography>Lee Lab</Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "6vw", md: "54px" },
+                  fontSize: "54px",
                 }}
               >
                 Domain Adaptation
@@ -71,7 +68,7 @@ export default function DomainAdaptation() {
               <Typography
                 ref={domainRef}
                 sx={{
-                  fontSize: { xs: "3vw", md: "36px" },
+                  fontSize: "36px",
                   position: "relative",
                   width: { xs: "100%" },
                   paddingX: "5vw",
@@ -93,23 +90,23 @@ export default function DomainAdaptation() {
               paddingX: "5vw",
             }}
           >
-              <Paper
-                className="DomainPhoto"
-                sx={{
-                  position: "relative",
-                  float: { xs: "none", md: "left" },
-                  transition: "transform 0.15s ease-in-out",
-                  borderRadius: "10%",
-                  backgroundImage: `url(${domain})`,
-                  backgroundPosition: "center",
-                  backgroundColor: `white`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: { xs: "100%", md: "100%" },
-                  width: { xs: "60vw", sm: "360px" },
-                  height: { xs: "60vw", sm: "360px" },
-                  margin: { xs: "auto", md: "2vw 2vw 0 0" },
-                }}
-              ></Paper>
+            <Paper
+              className="DomainPhoto"
+              sx={{
+                position: "relative",
+                float: { xs: "none", md: "left" },
+                transition: "transform 0.15s ease-in-out",
+                borderRadius: "10%",
+                backgroundImage: `url(${domain})`,
+                backgroundPosition: "center",
+                backgroundColor: `white`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: { xs: "100%", md: "100%" },
+                width: { xs: "60vw", sm: "360px" },
+                height: { xs: "60vw", sm: "360px" },
+                margin: { xs: "auto", md: "2vw 2vw 0 0" },
+              }}
+            ></Paper>
           </Box>
         </Zoom>
         <Box ref={domainInfoRef}>
@@ -121,7 +118,7 @@ export default function DomainAdaptation() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "2.5vw", md: "20px" },
+                fontSize: "20px",
                 height: { xs: "auto", lg: "720px" },
                 paddingX: "5vw",
                 paddingBottom: "3vw",

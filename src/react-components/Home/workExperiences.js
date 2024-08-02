@@ -42,14 +42,14 @@ export default function WorkExperiences() {
             boxShadow: 3,
             borderRadius: "50%",
             position: "absolute",
-            left: { xs: "-35vw", lg: "-420px" },
+            left: { xs: "-35vw", md: "-420px", lg: "-420px" },
             backgroundImage: `url(${huaweiBackground})`,
             backgroundSize: "cover",
-            backgroundPositionX: { xs: "32vw", lg: "384px" },
+            backgroundPositionX: { xs: "32vw", md: "384px" },
             backgroundRepeat: "no-repeat",
-            width: { xs: "90vw", lg: "1080px" },
-            height: { xs: "60vw", lg: "720px" },
-            marginTop: "5vw",
+            width: { xs: "90vw", md: "960px", lg: "1080px" },
+            height: { xs: "60vw", md: "640px", lg: "720px" },
+            marginTop: { xs: "10vw", md: "5vw"},
             zIndex: "0",
           }}
         >
@@ -65,8 +65,8 @@ export default function WorkExperiences() {
                 boxShadow: 3,
                 borderColor: `${paletteBlackRice[3]}`,
                 position: "relative",
-                top: { xs: "35vw", lg: "420px" },
-                left: { xs: "60vw", lg: "720px" },
+                top: { xs: "35vw", md: "400px", lg: "480px" },
+                left: { xs: "60vw", md: "720px" },
                 backgroundImage: `url(${huawei})`,
                 backgroundColor: `${grey[200]}`,
                 backgroundPosition: "center",
@@ -84,16 +84,14 @@ export default function WorkExperiences() {
         <Box
           className="huaweiInfo"
           sx={{
-            // float: "left",
             textAlign: "center",
-            // width: "50vw",
             padding: "5vw",
           }}
         >
           <Typography
             variant="h2"
             sx={{
-              fontSize: { xs: "6vw", md: "54px" },
+              fontSize: "54px",
               paddingLeft: { xs: "60%", xl: "768px" },
             }}
           >
@@ -101,7 +99,7 @@ export default function WorkExperiences() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "2.5vw", md: "22.5px" },
+              fontSize: { xs: "20px", md: "22.5px" },
               paddingLeft: { xs: "60%", xl: "768px" },
               paddingTop: "5vw",
               zIndex: "1",
@@ -115,10 +113,10 @@ export default function WorkExperiences() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "2.5vw", md: "22.5px" },
-              paddingLeft: { xs: "5vw", lg: "60%", xl: "768px" },
-              paddingRight: "5vw",
-              paddingTop: {xs: "10vw", md: "15vw", lg: "2vw"},
+              fontSize: { xs: "20px", md: "22.5px" },
+              paddingLeft: { xs: "5vw", md: "60%", xl: "768px" },
+              paddingRight: {xs: "5vw", md: "0"},
+              paddingTop: {xs: "10vw", sm: "15vw", md: "2vw", lg: "2vw"},
               zIndex: "1",
             }}
           >

@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <Box
       className="aboutMe"
-      sx={{ width: "100%", height: { xs: "70vw", lg: "840px" } }}
+      sx={{ width: "100%", height: { xs: "840px", lg: "840px" } }}
     >
       <Zoom in={true} style={{ transitionDuration: "900ms" }}>
         <Paper
@@ -19,16 +19,21 @@ export default function AboutMe() {
           sx={{
             borderRadius: "50%",
             position: "relative",
-            top: { xs: "-50vw", lg: "-600px" },
-            left: "20vw",
-            backgroundImage: `radial-gradient(circle, ${paletteBlackYellow[3]}, ${paletteBlackYellow[4]})`,
+            top: { sm: "0", md: "-50vw", lg: "-600px" },
+            left: { sm: "0", md: "20vw" },
+            backgroundColor: "transparent",
+            boxShadow: { xs: "0", sm: "0" },
+            backgroundImage: {
+              xs: "none",
+              md: `radial-gradient(circle, ${paletteBlackYellow[3]}, ${paletteBlackYellow[4]})`,
+            },
             textAlign: "center",
-            width: { xs: "100vw", lg: "1200px" },
-            height: { xs: "100vw", lg: "1200px" },
+            width: { sm: "100vw", lg: "1200px" },
+            height: { sm: "100vw", lg: "1200px" },
             zIndex: "0",
-            paddingTop: { xs: "55vw", lg: "660px" },
-            paddingLeft: { xs: "20vw", lg: "15vw" },
-            paddingRight: { xs: "23vw", lg: "20vw" },
+            paddingTop: { sm: "46vw", md: "51vw", lg: "660px" },
+            paddingLeft: { sm: "5vw", md: "20vw", lg: "15vw" },
+            paddingRight: { sm: "5vw", md: "23vw", lg: "20vw" },
           }}
         >
           <Zoom
@@ -37,7 +42,8 @@ export default function AboutMe() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "3vw", lg: "36px" },
+                fontSize: "36px",
+                color: { xs: "white", md: "black" },
               }}
             >
               Hello! It's me,
@@ -49,7 +55,8 @@ export default function AboutMe() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "7vw", md: "63px" },
+                fontSize: "63px",
+                color: { xs: "white", md: "black" },
               }}
             >
               Rachel Zeng.
@@ -62,14 +69,16 @@ export default function AboutMe() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "2.5vw", md: "22.5px" },
+                fontSize: "22.5px",
+                color: { xs: "white", md: "black" },
               }}
             >
-              Welcome to my website! I am a fourth-year student pursuing a
-              Computer Science Specialist and Statistics Major at the University
-              of Toronto. My concentration is in Artificial Intelligence and Web
-              Technologies. Currently, my research interest lies in human-AI
-              collaboration and interaction.
+              I am a highly motivated software engineer with a solid academic
+              foundation and extensive research experience. I graduated from the
+              University of Toronto with a Bachelor's degree in Computer Science
+              and Statistics with a GPA of 3.97/4.0, and I am currently pursuing
+              a Master of Engineering in Electrical Engineering and Computer
+              Science at UC Berkeley.
             </Typography>
           </Zoom>
         </Paper>
@@ -78,24 +87,33 @@ export default function AboutMe() {
         in={true}
         style={{ transitionDuration: "900ms", transitionDelay: "300ms" }}
       >
-        <Paper
-          className="aboutMePhoto"
+        <Box
           sx={{
-            borderRadius: "50%",
-            border: 5,
-            borderColor: `${grey[400]}`,
-            position: "absolute",
-            top: { xs: "30vw", md: "270px" },
-            left: "13vw",
-            backgroundImage: `url(${profilePhoto})`,
-            backgroundColor: "black",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            width: { xs: "30vw", lg: "360px" },
+            position: { xs: "relative", md: "absolute" },
+            display: "flex",
+            justifyContent: "center",
+            top: { xs: "-90vw", md: "270px" },
+            left: { xs: "0", md: "8vw", lg: "13vw" },
+            width: { xs: "100vw", md: "360px" },
             height: { xs: "30vw", lg: "360px" },
           }}
-        ></Paper>
+        >
+          <Paper
+            className="aboutMePhoto"
+            sx={{
+              borderRadius: "50%",
+              border: 5,
+              borderColor: `${grey[400]}`,
+              backgroundImage: `url(${profilePhoto})`,
+              backgroundColor: "black",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              width: { xs: "30vw", lg: "360px" },
+              height: { xs: "30vw", lg: "360px" },
+            }}
+          ></Paper>
+        </Box>
       </Zoom>
     </Box>
   );

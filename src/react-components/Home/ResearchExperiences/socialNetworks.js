@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Box, Typography, Zoom, Slide, IconButton } from "@mui/material";
+import { Box, Typography, Zoom, Slide, IconButton, Button } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import socialNetworks from "../static/socialNetworks.jpg";
 import {
@@ -8,7 +8,7 @@ import {
   paletteBlueOrange,
 } from "../../../colorPalettle";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 // import "./style.css";
 
@@ -40,7 +40,7 @@ export default function SocialNetworks() {
         // marginTop: "10vw",
         color: "white",
         position: "relative",
-        marginY: "20vw", 
+        marginY: {xs: "30vw", md:"20vw"},
         // backgroundImage: `url(${socialNetworks})`,
       }}
     >
@@ -53,9 +53,9 @@ export default function SocialNetworks() {
           backgroundSize: "cover",
           opacity: 0.3,
           width: "110%",
-          height: { xs: "80vw", md: "720px" },
+          height: { xs: "100vw", md: "720px" },
           boxShadow: {
-            xs: `0 0 20vw 20vw ${paletteBlackYellow[0]} inset`,
+            xs: `0 0 180px 180px ${paletteBlackYellow[0]} inset`,
             md: `0 0 180px 180px ${paletteBlackYellow[0]} inset`,
           },
         }}
@@ -69,7 +69,7 @@ export default function SocialNetworks() {
           <Box sx={{ textAlign: "center", marginBottom: "20vw" }}>
             <Typography
               sx={{
-                fontSize: { xs: "6vw", md: "54px" },
+                fontSize: "54px",
               }}
             >
               Social Networks
@@ -77,7 +77,7 @@ export default function SocialNetworks() {
             <Typography
               ref={socialRef}
               sx={{
-                fontSize: { xs: "3vw", md: "36px" },
+                fontSize: "36px",
                 width: { xs: "100%" },
                 paddingX: "5vw",
                 paddingBottom: "2vw",
@@ -88,8 +88,8 @@ export default function SocialNetworks() {
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "2.5vw", md: "20px" },
-                height: { xs: "auto"},
+                fontSize: "20px",
+                height: { xs: "auto" },
                 paddingX: "5vw",
                 paddingBottom: "3vw",
               }}
@@ -105,13 +105,14 @@ export default function SocialNetworks() {
               user connections. I also presented my findings to more than 100
               students and pro- fessors at the ROP Fair, in 2022.
             </Typography>
-            <IconButton
-              onClick={() => navigate("/research/social-networks")}
-            >
+            <IconButton onClick={() => navigate("/research/social-networks")}>
               {/* <PictureAsPdfIcon style={{ fontSize: 50, color: "white" }} /> */}
-              <Typography sx={{color: "white", fontSize: { xs: "2.5vw", md: "20px" } }}>
+              <Button
+                variant="outlined"
+                sx={{ color: "white", fontSize:  "20px" }}
+              >
                 Click Here to Learn More
-              </Typography>
+              </Button>
             </IconButton>
           </Box>
         </Zoom>

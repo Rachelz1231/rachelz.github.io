@@ -47,9 +47,9 @@ export default function ResearchExperiences() {
             sx={{
               width: "100%",
               textAlign: "center",
-              fontSize: { xs: "6vw", md: "54px" },
+              fontSize: "54px",
               color: `${paletteBlue[3]}`,
-              fontWeight: 'bold'
+              fontWeight: "bold",
             }}
           >
             My Research

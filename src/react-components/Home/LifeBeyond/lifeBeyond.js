@@ -55,14 +55,15 @@ export default function LifeBeyond() {
           <Box sx={{ textAlign: "center", marginBottom: "20vw" }}>
             <Typography
               sx={{
-                fontSize: { xs: "6vw", md: "54px" },
+                fontSize: "54px",
+                paddingX: "5vw"
               }}
             >
               Life Beyond Academia and the Workplace
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "2.5vw", md: "20px", lg: "30px" },
+                fontSize: { xs: "25px", lg: "30px" },
                 height: { xs: "auto" },
                 paddingX: "5vw",
                 paddingBottom: "3vw",

@@ -33,7 +33,7 @@ export default function Spark() {
         width: "100%",
         marginTop: "10vw",
         marginBottom: "25vw",
-        color: { xs: "white", md: "black" },
+        color: "black",
       }}
     >
       <Box ref={sparkInfoRef}>
@@ -60,8 +60,8 @@ export default function Spark() {
                 backgroundColor: `white`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                width: { xs: "10vw", md: "90px" },
-                height: { xs: "10vw", md: "90px" },
+                width: "90px",
+                height: "90px",
                 marginLeft: "5vw",
                 zIndex: "999",
               }}
@@ -72,7 +72,9 @@ export default function Spark() {
                 left: "2vw",
               }}
             >
-              <Typography>Intelligent Adaptive Interventions Lab</Typography>
+              <Typography sx={{ fontSize: "24px" }}>
+                Intelligent Adaptive Interventions Lab
+              </Typography>
               <Typography
                 sx={{
                   fontSize: { xs: "6vw", md: "54px" },
@@ -92,28 +94,40 @@ export default function Spark() {
           <Typography
             ref={sparkRef}
             sx={{
-              fontSize: { xs: "3vw", md: "36px" },
+              fontSize: "36px",
               position: "relative",
+              display: "inline-block",
               width: { xs: "100%" },
               paddingX: "5vw",
               paddingBottom: "2vw",
-              color: { xs: "white", md: "black" },
+              color: "black",
             }}
           >
             Understanding the Role of Large Language Models in Personalizing and
             Scaffolding Strategies to Combat Academic Procrastination
             <Typography
               sx={{
-                fontSize: { xs: "2vw", md: "24px" },
-                justifyContent: "center",
-                color: { xs: "white" },
+                fontSize: "24px",
+                fontStyle: "italic",
               }}
             >
-              Our paper, where I serve as the second author, has been accepted by CHI 2024!
+              CHI 2024 Best Paper Honorable Mention
+              <Button
+                variant="contained"
+                onClick={() =>
+                  window.open("https://doi.org/10.1145/3613904.3642081")
+                }
+                sx={{
+                  position: "relative",
+                  float: "none",
+                  fontSize: "20px",
+                  padding: "0 0 0 0",
+                  marginLeft: "1vw",
+                }}
+              >
+                Link
+              </Button>
             </Typography>
-            <Button variant="contained" onClick={() => window.open("https://arxiv.org/pdf/2312.13581.pdf")}>
-              Dive into our findings in the preprint here
-            </Button>
           </Typography>
         </Slide>
         <Slide
@@ -126,11 +140,10 @@ export default function Spark() {
             ref={sparkRef}
             display={{ lg: "none" }}
             sx={{
-              fontSize: { xs: "2.5vw", md: "20px" },
+              fontSize: "20px",
               height: { xs: "auto", lg: "720px" },
               paddingX: "5vw",
               paddingBottom: "3vw",
-              color: { xs: "white", md: "black" },
             }}
           >
             Traditional interventions for academic procrastination often fail to
@@ -157,7 +170,7 @@ export default function Spark() {
           <Typography
             display={{ lg: "none" }}
             sx={{
-              fontSize: { xs: "2.5vw", md: "20px" },
+              fontSize: "20px",
               height: { xs: "auto", lg: "720px" },
               paddingX: "5vw",
               paddingBottom: "3vw",

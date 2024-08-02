@@ -2,12 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Box, Typography, Zoom, Slide, IconButton, Paper } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import classroom from "./static/travel.png";
-import {
-  paletteBlackRice,
-  paletteBlackYellow,
-  paletteBlueOrange,
-  paletteBlue,
-} from "../../../colorPalettle";
+import { paletteBlue } from "../../../colorPalettle";
 
 import { useNavigate } from "react-router-dom";
 
@@ -38,7 +33,7 @@ export default function Traveling() {
       ref={socialRef}
       sx={{
         width: "100%",
-        position: "relative",
+        height: { xs: "50vw", md: "30vw" },
       }}
     >
       <Box
@@ -55,7 +50,7 @@ export default function Traveling() {
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
-                height: "30vw",
+                height: { xs: "50vw", md: "30vw" },
                 backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
                     ${paletteBlue[0]})`,
                 position: "absolute",
@@ -72,8 +67,8 @@ export default function Traveling() {
                   backgroundColor: "black",
                   backgroundPosition: "center",
                   backgroundSize: "150%",
-                  width: { xs: "30vw" },
-                  height: { xs: "30vw" },
+                  width: { xs: "50vw", md: "30vw" },
+                  height: { xs: "50vw", md: "30vw" },
                 }}
               ></Paper>
             </Box>
@@ -82,13 +77,13 @@ export default function Traveling() {
                 height: "30vw",
                 position: "relative",
                 paddingY: { xs: "2vw", md: "5vw" },
-                paddingLeft: "30vw",
-                paddingRight: "10vw",
+                paddingLeft:  { xs: "50vw", md: "30vw"},
+                paddingRight: { xs: "2vw", lg: "10vw"},
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "2.5vw", md: "20px", lg: "30px" },
+                  fontSize: { xs: "20px", lg: "30px" },
                   paddingX: "5vw",
                   paddingBottom: "3vw",
                   zIndex: 2,

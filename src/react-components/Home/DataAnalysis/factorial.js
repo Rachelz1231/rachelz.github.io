@@ -38,12 +38,10 @@ export default function Factorial() {
       >
         Factorial Experiment of CPU usage
       </Typography>
-      <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
         As data analysis students who rely on computers daily, we understand
         their significance in our lives. However, we often encounter situations
-        where our computers slow down or freeze due to high CPU usage. The CPU,
-        or Central Processing Unit, is the essential component responsible for
-        handling tasks in a computer (Britannica, 2018). Monitoring CPU usage
+        where our computers slow down or freeze due to high CPU usage. Monitoring CPU usage
         can help prevent system crashes. To address this issue, our study aims
         to identify the specific tasks that cause high CPU usage when running on
         a computer.
@@ -54,7 +52,7 @@ export default function Factorial() {
           sx={{ fontSize: { xs: 40, sm: 50 }, color: "white" }}
         />
         <Typography
-          sx={{ fontSize: { xs: "2.5vw", md: "20px", color: "white" } }}
+          sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}
         >
           Open Report
         </Typography>
@@ -65,7 +63,7 @@ export default function Factorial() {
       >
         <SlideshowIcon sx={{ fontSize: { xs: 40, sm: 50 }, color: "white" }} />
         <Typography
-          sx={{ fontSize: { xs: "2.5vw", md: "20px", color: "white" } }}
+          sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}
         >
           Open Slides
         </Typography>
@@ -73,7 +71,7 @@ export default function Factorial() {
       <Box>
       <IconButton aria-label="youtube" onClick={() => window.open("https://youtu.be/9hcm2CUqQpA", "_blank")}>
         <YouTubeIcon style={{ fontSize: 50, color: "white"  }} />
-        <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px", color: "white" } }}>
+        <Typography sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}>
           Open Video
         </Typography>
       </IconButton>

@@ -34,21 +34,18 @@ export default function Mingar() {
       >
         Product Performance Analysis
       </Typography>
-      <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
         Our goal is to investigate on MINGAR’s Fitness Tracker's new product
         line customers, and potential wearable device deficiency for MINGAR
         company.
         <br />
         What demographics of the new affordable lines’ customers different from
         MINGAR’s traditional buyers? <br />
-        On average, does MINGAR’s device have significantly more issues with
-        recording sleep scores for customers with darker skin tone than lighter
-        skin tone?
       </Typography>
 
       <IconButton aria-label="mingarPdf" onClick={() => window.open(mingarPdf)}>
         <PictureAsPdfIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
           Open Report
         </Typography>
       </IconButton>

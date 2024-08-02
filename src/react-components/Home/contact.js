@@ -24,7 +24,7 @@ export default function Contact() {
       sx={{
         width: "100%",
         color: `${paletteBlackRice[5]}`,
-        marginY: { xs: "20vw"},
+        marginY: { xs: "20vw" },
         textAlign: "center",
       }}
     >
@@ -32,13 +32,13 @@ export default function Contact() {
         sx={{
           // margin: "1vw",
           marginBottom: "5vw",
-          fontSize: { xs: "6vw", md: "54px" },
+          fontSize: "54px",
           fontWeight: "bold",
           paddingX: "10vw",
         }}
       >
         Get In Touch
-        <Typography sx={{fontSize: { xs: "2.5vw", md: "20px" , lg: "30px" },}}>
+        <Typography sx={{ fontSize: { xs: "20px", lg: "30px" } }}>
           Feel free to reach out for discussions, inquiries, or collaborative
           ideas related to my work. I welcome the opportunity to explore
           collaborative possibilities and learn from each other's insights and
@@ -72,8 +72,8 @@ export default function Contact() {
           >
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
               }}
             >
               LinkedIn
@@ -94,6 +94,7 @@ export default function Contact() {
             </IconButton>
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -115,6 +116,7 @@ export default function Contact() {
           >
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -131,6 +133,7 @@ export default function Contact() {
             </IconButton>
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -152,6 +155,7 @@ export default function Contact() {
           >
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -168,6 +172,7 @@ export default function Contact() {
             </IconButton>
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -189,6 +194,7 @@ export default function Contact() {
           >
             <Typography
               sx={{
+                fontSize: "20px",
                 display: { xs: "inline-block", sm: "block" },
                 //width: { xs: "20vw", sm: "auto" },
               }}
@@ -204,12 +210,9 @@ export default function Contact() {
               />
             </IconButton>
             <Typography
-              sx={
-                {
-                  // display: { xs: "inline-block", sm: "block" },
-                  //width: { xs: "20vw", sm: "auto" },
-                }
-              }
+              sx={{
+                fontSize: "20px",
+              }}
             >
               rachelz1231@gmail.com
             </Typography>
@@ -229,7 +232,7 @@ export default function Contact() {
             <Typography
               sx={{
                 display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
+                fontSize: "20px",
               }}
             >
               Institution Email
@@ -243,8 +246,7 @@ export default function Contact() {
             <Typography
               sx={
                 {
-                  // display: { xs: "inline-block", sm: "block" },
-                  //width: { xs: "20vw", sm: "auto" },
+                  fontSize: "20px",
                 }
               }
             >
@@ -264,7 +266,7 @@ export default function Contact() {
             <Typography
               sx={{
                 display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
+                fontSize: "20px",
               }}
             >
               Discord
@@ -277,7 +279,7 @@ export default function Contact() {
             <Typography
               sx={{
                 display: { xs: "inline-block", sm: "block" },
-                //width: { xs: "20vw", sm: "auto" },
+                fontSize: "20px",
               }}
             >
               Maomao#2668

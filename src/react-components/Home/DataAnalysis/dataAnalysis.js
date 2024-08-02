@@ -131,7 +131,7 @@ export default function DataAnalysis() {
             }}
           >
             Data Analysis
-            <Typography sx={{fontSize: { xs: "2.5vw", md: "20px" },}}>
+            <Typography sx={{fontSize: { xs: "20px", lg: "30px" },}}>
               Welcome to my collection of statistical data analysis projects. As
               a Computer Science student with a passion for Statistics, I've
               dedicated time to exploring the power of data beyond the realm of

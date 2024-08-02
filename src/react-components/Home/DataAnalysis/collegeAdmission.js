@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Paper, IconButton, Box } from "@mui/material";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import bgImage from "../static/college.jpg";
 import pdf from "../static/302.pdf";
 import { paletteBlackRice } from "../../../colorPalettle";
@@ -35,27 +35,32 @@ export default function CollegeAdmission() {
       >
         College Admissions Analysis
       </Typography>
-      <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
         Admission rates of colleges and universities in the United States can
-        vary significantly due to a variety of reasons. For a video project in
-        our undergraduate course, STA302H1: Methods of Data Analysis I, Zewen Ma
-        and I examined factors that could potentially impact these admission
+        vary significantly due to a variety of reasons. We examined factors that could potentially impact these admission
         rates.
       </Typography>
 
-      <IconButton aria-label="pdf" onClick={() => window.open(pdf)}>
+      <IconButton
+        aria-label="pdf"
+        onClick={() => window.open(pdf)}
+      >
         <SlideshowIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
+        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
           Open Slides
         </Typography>
       </IconButton>
       <Box>
-      <IconButton aria-label="youtube" onClick={() => window.open("https://youtu.be/nluSvbEiRao", "_blank")}>
-        <YouTubeIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "2.5vw", md: "20px" } }}>
-          Open Video
-        </Typography>
-      </IconButton>
+        <IconButton
+          sx={{ float: "flex" }}
+          aria-label="youtube"
+          onClick={() => window.open("https://youtu.be/nluSvbEiRao", "_blank")}
+        >
+          <YouTubeIcon style={{ fontSize: 50 }} />
+          <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+            Open Video
+          </Typography>
+        </IconButton>
       </Box>
     </Paper>
   );
