@@ -29,13 +29,13 @@ export default function LinearMixed() {
     >
       <Typography
         sx={{
-          marginTop: { xs: "5vw", md: "45px" },
+          marginTop: { xs: "2vw", sm:"5vw", md: "45px" },
           fontSize: { xs: "5vw", md: "45px" },
         }}
       >
         Linear Mixed Model Exploration
       </Typography>
-      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         Presents statistical analysis and R skills, including variance analysis,
         linear mixed models, confidence intervals, p-values, and
         reproducibility. <br />
@@ -46,9 +46,9 @@ export default function LinearMixed() {
       </Typography>
 
       <IconButton aria-label="lmPdf" onClick={() => window.open(lmPdf)}>
-        <PictureAsPdfIcon style={{ fontSize: 50, color: "white" }} />
+        <PictureAsPdfIcon style={{ fontSize: {xs: 30, sm: 50}, color: "white" }} />
         <Typography
-          sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}
+          sx={{ fontSize: { xs: "3vw", sm: "20px", color: "white" } }}
         >
           Open Report
         </Typography>

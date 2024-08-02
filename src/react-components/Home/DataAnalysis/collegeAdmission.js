@@ -35,7 +35,7 @@ export default function CollegeAdmission() {
       >
         College Admissions Analysis
       </Typography>
-      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         Admission rates of colleges and universities in the United States can
         vary significantly due to a variety of reasons. We examined factors that could potentially impact these admission
         rates.
@@ -45,8 +45,8 @@ export default function CollegeAdmission() {
         aria-label="pdf"
         onClick={() => window.open(pdf)}
       >
-        <SlideshowIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+        <SlideshowIcon style={{ fontSize: {xs: 30, sm: 50} }} />
+        <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
           Open Slides
         </Typography>
       </IconButton>
@@ -56,8 +56,8 @@ export default function CollegeAdmission() {
           aria-label="youtube"
           onClick={() => window.open("https://youtu.be/nluSvbEiRao", "_blank")}
         >
-          <YouTubeIcon style={{ fontSize: 50 }} />
-          <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+          <YouTubeIcon style={{ fontSize: {xs: 30, sm: 50} }} />
+          <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
             Open Video
           </Typography>
         </IconButton>

@@ -34,7 +34,7 @@ export default function Mingar() {
       >
         Product Performance Analysis
       </Typography>
-      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         Our goal is to investigate on MINGAR’s Fitness Tracker's new product
         line customers, and potential wearable device deficiency for MINGAR
         company.
@@ -44,8 +44,8 @@ export default function Mingar() {
       </Typography>
 
       <IconButton aria-label="mingarPdf" onClick={() => window.open(mingarPdf)}>
-        <PictureAsPdfIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+        <PictureAsPdfIcon style={{ fontSize: {xs: 30, sm: 50} }} />
+        <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
           Open Report
         </Typography>
       </IconButton>

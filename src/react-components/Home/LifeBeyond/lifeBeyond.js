@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Box, Typography, Zoom, Slide, IconButton, Paper } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import classroom from "./static/classroom.png";
+import classroom from "./static/classroom.jpg";
 import {
   paletteBlackRice,
   paletteBlackYellow,
@@ -55,7 +55,7 @@ export default function LifeBeyond() {
           <Box sx={{ textAlign: "center", marginBottom: "20vw" }}>
             <Typography
               sx={{
-                fontSize: "54px",
+                fontSize: {xs: "48px", sm: "54px"},
                 paddingX: "5vw"
               }}
             >
@@ -63,7 +63,7 @@ export default function LifeBeyond() {
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "25px", lg: "30px" },
+                fontSize: { xs: "20px", sm: "25px", lg: "30px" },
                 height: { xs: "auto" },
                 paddingX: "5vw",
                 paddingBottom: "3vw",

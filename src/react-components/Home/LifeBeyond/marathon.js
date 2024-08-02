@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Box, Typography, Zoom, Slide, IconButton, Paper } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import classroom from "./static/running.PNG";
+import classroom from "./static/running.jpg";
 import {
   paletteBlackRice,
   paletteBlackYellow,
@@ -39,7 +39,9 @@ export default function Marathon() {
       sx={{
         width: "100%",
         position: "relative",
-        height: {xs: "50vw", md: "30vw"},
+        backgroundImage: `linear-gradient(0.60turn,  ${paletteBlue[4]}, 
+            ${paletteBlue[0]})`,
+        height: {xs: "55vw", sm: "50vw", md: "30vw"},
       }}
     >
       <Box
@@ -56,9 +58,6 @@ export default function Marathon() {
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
-                height: {xs: "50vw", md: "30vw"},
-                backgroundImage: `linear-gradient(0.60turn,  ${paletteBlue[4]}, 
-                    ${paletteBlue[0]})`,
                 position: "absolute",
                 backgroundPosition: "center",
                 width: "100%",
@@ -74,7 +73,7 @@ export default function Marathon() {
                   backgroundPosition: "top",
                   backgroundSize: "100%",
                   width: {xs: "50vw", md: "30vw"},
-                  height: {xs: "50vw", md: "30vw"},
+                  height: {xs: "55vw", sm: "50vw", md: "30vw"},
                 }}
               ></Paper>
             </Box>
@@ -89,7 +88,7 @@ export default function Marathon() {
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "20px", lg: "30px" },
+                  fontSize: { xs: "3vw", sm: "20px", lg: "30px" },
                   paddingX: "5vw",
                   paddingBottom: "3vw",
                   zIndex: 2,

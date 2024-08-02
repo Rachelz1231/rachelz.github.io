@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Box, Typography, Zoom, Slide, IconButton, Paper } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import classroom from "./static/travel.png";
+import classroom from "./static/travel.jpg";
 import { paletteBlue } from "../../../colorPalettle";
 
 import { useNavigate } from "react-router-dom";
@@ -33,7 +33,9 @@ export default function Traveling() {
       ref={socialRef}
       sx={{
         width: "100%",
-        height: { xs: "50vw", md: "30vw" },
+        height: { xs: "55vw", sm: "50vw", md: "30vw" },
+        backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
+            ${paletteBlue[0]})`,
       }}
     >
       <Box
@@ -50,9 +52,6 @@ export default function Traveling() {
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
-                height: { xs: "50vw", md: "30vw" },
-                backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
-                    ${paletteBlue[0]})`,
                 position: "absolute",
                 ackgroundPosition: "center",
                 width: "100%",
@@ -68,7 +67,7 @@ export default function Traveling() {
                   backgroundPosition: "center",
                   backgroundSize: "150%",
                   width: { xs: "50vw", md: "30vw" },
-                  height: { xs: "50vw", md: "30vw" },
+                  height: { xs: "55vw", sm: "50vw", md: "30vw" },
                 }}
               ></Paper>
             </Box>
@@ -83,7 +82,7 @@ export default function Traveling() {
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "20px", lg: "30px" },
+                  fontSize: { xs:"3vw", sm: "20px", lg: "30px" },
                   paddingX: "5vw",
                   paddingBottom: "3vw",
                   zIndex: 2,

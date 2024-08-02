@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-import profilePhoto from "./static/profile-photo.png";
 import { yellow, grey } from "@mui/material/colors";
 import { Box, Typography, Zoom, IconButton, Paper, Grid } from "@mui/material";
 import {
@@ -22,7 +21,6 @@ export default function Contact() {
     <Box
       className="contact"
       sx={{
-        width: "100%",
         color: `${paletteBlackRice[5]}`,
         marginY: { xs: "20vw" },
         textAlign: "center",
@@ -57,7 +55,7 @@ export default function Contact() {
           opacity: 0.8,
         }}
       >
-        <Grid item xs={12} sm={6} md={4} padding={0}>
+        <Grid item xs={12} sm={6} padding={0}>
           <Paper
             className="contact"
             onClick={() =>
@@ -86,7 +84,7 @@ export default function Contact() {
             >
               <LinkedInIcon
                 sx={{
-                  fontSize: { xs: 50, md: 90 },
+                  fontSize: { xs:30, sm:50,  md: 90 },
                   margin: 0,
                   color: `${paletteBlue[2]}`,
                 }}
@@ -103,7 +101,7 @@ export default function Contact() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={6}>
           <Paper
             className="contact"
             onClick={() => window.open("https://github.com/Rachelz1231")}
@@ -128,7 +126,7 @@ export default function Contact() {
               onClick={() => window.open("https://github.com/Rachelz1231")}
             >
               <GitHubIcon
-                sx={{ fontSize: { xs: 50, md: 90 }, color: `${grey[700]}` }}
+                sx={{ fontSize: { xs:30, sm:50,  md: 90 }, color: `${grey[700]}` }}
               />
             </IconButton>
             <Typography
@@ -142,7 +140,7 @@ export default function Contact() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} padding={0}>
+        <Grid item xs={12} sm={6} md={6} padding={0}>
           <Paper
             className="contact"
             onClick={() => window.open("https://wa.me/12892591261")}
@@ -167,7 +165,7 @@ export default function Contact() {
               onClick={() => window.open("https://wa.me/12892591261")}
             >
               <WhatsAppIcon
-                sx={{ fontSize: { xs: 50, md: 90 }, color: `${green[400]}` }}
+                sx={{ fontSize: { xs:30, sm:50, md: 90 }, color: `${green[400]}` }}
               />
             </IconButton>
             <Typography
@@ -181,7 +179,7 @@ export default function Contact() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={6}>
           <Paper
             className="contact"
             onClick={() => window.open("mailto:rachelz1231@gmail.com")}
@@ -199,14 +197,14 @@ export default function Contact() {
                 //width: { xs: "20vw", sm: "auto" },
               }}
             >
-              Gmail
+              Email
             </Typography>
             <IconButton
               aria-label="gmail"
               onClick={() => window.open("mailto:rachelz1231@gmail.com")}
             >
               <GoogleIcon
-                sx={{ fontSize: { xs: 50, md: 90 }, color: `${red[400]}` }}
+                sx={{ fontSize: { xs:30, sm:50, md: 90 }, color: `${red[400]}` }}
               />
             </IconButton>
             <Typography
@@ -214,12 +212,12 @@ export default function Contact() {
                 fontSize: "20px",
               }}
             >
-              rachelz1231@gmail.com
+              rachel.yuchen.zeng@gmail.com
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Paper
+        {/* <Grid item xs={12} sm={6} md={6}> */}
+          {/* <Paper
             className="contact"
             onClick={() => window.open("mailto:yuchen.zeng@mail.utoronto.ca")}
             sx={{
@@ -252,9 +250,9 @@ export default function Contact() {
             >
               yuchen.zeng@mail.utoronto.ca
             </Typography>
-          </Paper>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+          </Paper> */}
+        {/* </Grid>
+        <Grid item xs={12} sm={6} md={6}>
           <Paper
             className="contact"
             sx={{
@@ -285,7 +283,7 @@ export default function Contact() {
               Maomao#2668
             </Typography>
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

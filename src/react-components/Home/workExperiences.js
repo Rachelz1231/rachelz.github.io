@@ -41,15 +41,16 @@ export default function WorkExperiences() {
             borderColor: `${paletteBlackRice[2]}`,
             boxShadow: 3,
             borderRadius: "50%",
-            position: "absolute",
-            left: { xs: "-35vw", md: "-420px", lg: "-420px" },
+            position: {sm: "absolute"},
             backgroundImage: `url(${huaweiBackground})`,
             backgroundSize: "cover",
-            backgroundPositionX: { xs: "32vw", md: "384px" },
+            backgroundPositionX: { sm: "194px", md: "384px" },
             backgroundRepeat: "no-repeat",
-            width: { xs: "90vw", md: "960px", lg: "1080px" },
-            height: { xs: "60vw", md: "640px", lg: "720px" },
-            marginTop: { xs: "10vw", md: "5vw"},
+            width: { xs: "90vw", sm: "600px", md: "960px"},
+            height: { xs: "60vw", sm: "400px", md: "640px" },
+            left: { xs: "0vw", sm: "-220px", md: "-420px"},
+            marginTop: { xs: "10vw", sm: "15vw", md: "5vw"},
+            marginX: {xs: "5vw", sm: "0vw"},
             zIndex: "0",
           }}
         >
@@ -64,16 +65,16 @@ export default function WorkExperiences() {
                 border: 5,
                 boxShadow: 3,
                 borderColor: `${paletteBlackRice[3]}`,
-                position: "relative",
-                top: { xs: "35vw", md: "400px", lg: "480px" },
-                left: { xs: "60vw", md: "720px" },
+                position: {xs: "relative", md: "relative"},
+                top: { xs: "35vw", sm: "280px", md: "400px", lg: "480px" },
+                left: { xs: "60vw", sm: "400px", md: "720px" },
                 backgroundImage: `url(${huawei})`,
                 backgroundColor: `${grey[200]}`,
                 backgroundPosition: "center",
                 backgroundSize: "90%",
                 backgroundRepeat: "no-repeat",
-                width: { xs: "25vw", lg: "300px" },
-                height: { xs: "25vw", lg: "300px" },
+                width: { xs: "25vw", sm: "200px"},
+                height: { xs: "25vw", sm: "200px"},
                 zIndex: "1",
               }}
             ></Box>
@@ -86,13 +87,26 @@ export default function WorkExperiences() {
           sx={{
             textAlign: "center",
             padding: "5vw",
+            position: {sm: "relative"}
           }}
         >
+          <Box
+            display={{ xs: "none", sm: "block" }}
+            sx={{
+              float: { xs: "none", sm: "left" },
+              width: { xs: "90vw", sm: "350px", md: "500px" },
+              height: { xs: "60vw", sm: "620px", md: "700px" },
+              shapeOutside: {sm: `ellipse(58vw 300px at 0% 55%)`, md: `ellipse(55vw 550px at 0% 50%)`},
+              // clipPath: {sm: `ellipse(58vw 300px at 0% 60%)`, md: `ellipse(55vw 550px at 0% 50%)`},
+              // backgroundColor: "grey",
+              // opacity: "50%",
+              marginX: "2vw",
+            }}
+          ></Box>
           <Typography
             variant="h2"
             sx={{
-              fontSize: "54px",
-              paddingLeft: { xs: "60%", xl: "768px" },
+              fontSize: "50px",
             }}
           >
             Work Experiences
@@ -100,8 +114,9 @@ export default function WorkExperiences() {
           <Typography
             sx={{
               fontSize: { xs: "20px", md: "22.5px" },
-              paddingLeft: { xs: "60%", xl: "768px" },
-              paddingTop: "5vw",
+              // paddingLeft: { xs: "5vw", sm: "60%", xl: "768px" },
+              paddingX: "5vw",
+              paddingTop: {xs: "5vw", sm: "50px", md: "5vw"},
               zIndex: "1",
             }}
           >
@@ -114,9 +129,9 @@ export default function WorkExperiences() {
           <Typography
             sx={{
               fontSize: { xs: "20px", md: "22.5px" },
-              paddingLeft: { xs: "5vw", md: "60%", xl: "768px" },
-              paddingRight: {xs: "5vw", md: "0"},
-              paddingTop: {xs: "10vw", sm: "15vw", md: "2vw", lg: "2vw"},
+              // paddingRight: {xs: "5vw", md: "0"},
+              // paddingLeft: { xs: "5vw", sm: "0", md: "0", lg: "60%", xl: "768px" },
+              paddingTop: {xs: "10vw",  md: "2vw", lg: "2vw"},
               zIndex: "1",
             }}
           >

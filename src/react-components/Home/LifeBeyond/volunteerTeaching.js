@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Box, Typography, Zoom, Slide, IconButton, Paper, Button } from "@mui/material";
-import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import classroom from "./static/classroom.png";
+import classroom from "./static/classroom.jpg";
 import {
   paletteBlackRice,
   paletteBlackYellow,
@@ -38,7 +37,9 @@ export default function VolunteerTeaching() {
       ref={socialRef}
       sx={{
         width: "100%",
-        height: {xs: "50vw", md: "30vw"},
+        height: {xs: "55vw", sm: "50vw",md: "30vw"},
+        backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
+        ${paletteBlue[0]})`,
       }}
     >
       <Box
@@ -55,9 +56,6 @@ export default function VolunteerTeaching() {
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
-                height: {xs: "50vw", md: "30vw"},
-                backgroundImage: `linear-gradient(0.30turn,  ${paletteBlue[4]}, 
-                    ${paletteBlue[0]})`,
                 position: "absolute",
                 ackgroundPosition: "center",
                 width: "100%",
@@ -73,7 +71,7 @@ export default function VolunteerTeaching() {
                   backgroundPosition: "center",
                   backgroundSize: "150%",
                   width: {xs: "50vw", md: "30vw"},
-                  height: {xs: "50vw", md: "30vw"},
+                  height: {xs: "55vw", sm: "50vw", md: "30vw"},
                 }}
               ></Paper>
             </Box>
@@ -88,7 +86,7 @@ export default function VolunteerTeaching() {
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "20px", lg: "30px" },
+                  fontSize: { xs: "3vw", sm: "20px", lg: "30px" },
                   paddingX: "5vw",
                   paddingBottom: { md: "3vw" },
                   zIndex: 2,
@@ -103,7 +101,7 @@ export default function VolunteerTeaching() {
                 onClick={() => navigate("/extracurricular/volunteer-teaching")}
               >
                 {/* <PictureAsPdfIcon style={{ fontSize: 50, color: "white" }} /> */}
-                <Button variant="outlined" sx={{ fontSize: "20px" }}>
+                <Button variant="outlined" sx={{ fontSize: {xs: "2.5vw", sm: "20px"} }}>
                   Click Here to Learn More
                 </Button>
               </IconButton>

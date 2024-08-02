@@ -51,7 +51,7 @@ export default function DataVisualization() {
       >
         Data Visualization
       </Typography>
-      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         Demonstrates statistical analysis and R skills, including data
         visualization and hypothesis testing.
         <br /> Discusses skills for a data scientist job, emphasizing soft and
@@ -61,8 +61,8 @@ export default function DataVisualization() {
       </Typography>
         
       <IconButton aria-label="dvPdf" onClick={() => window.open(dvPdf)}>
-        <PictureAsPdfIcon style={{ fontSize: 50 }} />
-        <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+        <PictureAsPdfIcon style={{ fontSize: {xs: 30, sm: 50} }} />
+        <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
           View Portfolio PDF
         </Typography>
       </IconButton>

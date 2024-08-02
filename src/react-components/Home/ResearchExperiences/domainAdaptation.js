@@ -43,8 +43,8 @@ export default function DomainAdaptation() {
           color: `${paletteBlueOrange[4]}`,
           marginTop: { lg: "10vw" },
           marginX: { xs: "-50vw", md: "auto" },
-          width: { xs: "200vw", md: "1170px" },
-          height: { xs: "200vw", md: "1170px" },
+          width: { sm: "200vw",  md: "1170px" },
+          height: { md: "1170px" },
           paddingTop: { xs: "20vw", md: "10vw", lg: "120px" },
           paddingX: { xs: "50vw", md: `calc(225px - 5vw)` },
           boxShadow: `inset 0 -10 30 -30`,
@@ -121,7 +121,7 @@ export default function DomainAdaptation() {
                 fontSize: "20px",
                 height: { xs: "auto", lg: "720px" },
                 paddingX: "5vw",
-                paddingBottom: "3vw",
+                paddingBottom: {xs: "100px", md: "3vw"},
               }}
             >
               Neural Machine Translation (NMT) models built on multilingual

@@ -32,13 +32,13 @@ export default function Factorial() {
     >
       <Typography
         sx={{
-          marginTop: { xs: "5vw", md: "45px" },
+          marginTop: { xs: "1vw", sm: "5vw", md: "45px" },
           fontSize: { xs: "4vw", md: "45px" },
         }}
       >
         Factorial Experiment of CPU usage
       </Typography>
-      <Typography sx={{ fontSize: { xs: "20px", md: "20px" } }}>
+      <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         As data analysis students who rely on computers daily, we understand
         their significance in our lives. However, we often encounter situations
         where our computers slow down or freeze due to high CPU usage. Monitoring CPU usage
@@ -49,10 +49,10 @@ export default function Factorial() {
 
       <IconButton aria-label="factPdf" onClick={() => window.open(factPdf)}>
         <PictureAsPdfIcon
-          sx={{ fontSize: { xs: 40, sm: 50 }, color: "white" }}
+          sx={{ fontSize: { xs: 30, sm: 50 }, color: "white" }}
         />
         <Typography
-          sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}
+          sx={{ fontSize: { xs: "3vw", sm: "20px", color: "white" } }}
         >
           Open Report
         </Typography>
@@ -61,17 +61,17 @@ export default function Factorial() {
         aria-label="factPdf"
         onClick={() => window.open(facPresentation)}
       >
-        <SlideshowIcon sx={{ fontSize: { xs: 40, sm: 50 }, color: "white" }} />
+        <SlideshowIcon sx={{ fontSize: { xs: 30, sm: 50 }, color: "white" }} />
         <Typography
-          sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}
+          sx={{ fontSize: { xs: "3vw", sm: "20px", color: "white" } }}
         >
           Open Slides
         </Typography>
       </IconButton>
       <Box>
       <IconButton aria-label="youtube" onClick={() => window.open("https://youtu.be/9hcm2CUqQpA", "_blank")}>
-        <YouTubeIcon style={{ fontSize: 50, color: "white"  }} />
-        <Typography sx={{ fontSize: { xs: "20px", md: "20px", color: "white" } }}>
+        <YouTubeIcon style={{ fontSize: {xs: 30, sm: 50}, color: "white"  }} />
+        <Typography sx={{ fontSize: { xs: "3vw", sm: "20px", color: "white" } }}>
           Open Video
         </Typography>
       </IconButton>

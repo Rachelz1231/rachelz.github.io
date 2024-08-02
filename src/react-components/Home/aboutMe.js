@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import profilePhoto from "./static/profile-photo.png";
+import profilePhoto from "./static/profile-photo.jpg";
 import { yellow, grey } from "@mui/material/colors";
 import { Box, Typography, Zoom, Paper } from "@mui/material";
 import { paletteBlackRice, paletteBlackYellow } from "../../colorPalettle";
@@ -19,8 +19,8 @@ export default function AboutMe() {
           sx={{
             borderRadius: "50%",
             position: "relative",
-            top: { sm: "0", md: "-50vw", lg: "-600px" },
-            left: { sm: "0", md: "20vw" },
+            top: { xs: "0", md: "-50vw", lg: "-600px" },
+            left: { xs: "0", md: "20vw" },
             backgroundColor: "transparent",
             boxShadow: { xs: "0", sm: "0" },
             backgroundImage: {
@@ -28,12 +28,12 @@ export default function AboutMe() {
               md: `radial-gradient(circle, ${paletteBlackYellow[3]}, ${paletteBlackYellow[4]})`,
             },
             textAlign: "center",
-            width: { sm: "100vw", lg: "1200px" },
-            height: { sm: "100vw", lg: "1200px" },
+            width: { xs: "100vw", lg: "1200px" },
+            height: { xs: "100vw", lg: "1200px" },
             zIndex: "0",
-            paddingTop: { sm: "46vw", md: "51vw", lg: "660px" },
-            paddingLeft: { sm: "5vw", md: "20vw", lg: "15vw" },
-            paddingRight: { sm: "5vw", md: "23vw", lg: "20vw" },
+            paddingTop: { xs: "46vw", md: "51vw", lg: "660px" },
+            paddingLeft: { xs: "5vw", md: "20vw", lg: "15vw" },
+            paddingRight: { xs: "5vw", md: "23vw", lg: "20vw" },
           }}
         >
           <Zoom

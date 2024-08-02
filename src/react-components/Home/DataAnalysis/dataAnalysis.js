@@ -110,7 +110,7 @@ export default function DataAnalysis() {
       ref={dataRef}
       sx={{
         color: `${paletteBlackRice[4]}`,
-        marginY: "20vw",
+        marginY: {xs: "50vw", sm: "20vw"},
         textAlign: "center",
       }}
     >
@@ -123,9 +123,8 @@ export default function DataAnalysis() {
         >
           <Typography
             sx={{
-              // margin: "1vw",
               marginBottom: "5vw",
-              fontSize: { xs: "6vw", md: "54px" },
+              fontSize: "54px",
               fontWeight: "bold",
               paddingX: "10vw",
             }}
