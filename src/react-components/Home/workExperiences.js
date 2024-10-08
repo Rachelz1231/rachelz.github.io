@@ -29,7 +29,7 @@ export default function WorkExperiences() {
       ref={workExperiencesRef}
       sx={{
         marginY: "20vw",
-        color: `${paletteBlackRice[4]}`,
+        color: `${paletteBlackRice[0]}`,
       }}
     >
 

@@ -48,7 +48,7 @@ export default function ResearchExperiences() {
               width: "100%",
               textAlign: "center",
               fontSize: "54px",
-              color: `${paletteBlue[3]}`,
+              color: `${paletteBlue[4]}`,
               fontWeight: "bold",
             }}
           >

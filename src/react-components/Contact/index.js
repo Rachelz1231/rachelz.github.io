@@ -1,49 +1,35 @@
 import React from "react";
-import { useRef } from "react";
-import { Box, Typography, IconButton, Paper, Grid } from "@mui/material";
-import {
-  paletteBlackRice,
-  paletteBlue,
-} from "../../colorPalettle";
+import { Box, Typography, Divider,Paper, Grid, IconButton } from "@mui/material";
 import { grey, red, green } from "@mui/material/colors";
+import Button from "@mui/material/Button";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-// import EmailIcon from "@mui/icons-material/Google";
-// import ForumIcon from "@mui/icons-material/Forum";
 import EmailIcon from "@mui/icons-material/Email";
-/* The Contact Component */
+import { paletteBlackYellow, paletteBlue } from "../../colorPalettle";
+/* The Publications Component */
 export default function Contact() {
-  const aboutMeInfoBox = useRef(null);
   return (
     <Box
-      className="contact"
       sx={{
-        color: `${paletteBlackRice[5]}`,
-        marginY: { xs: "20vw" },
-        textAlign: "center",
+        flexGrow: 1,
+        zIndex: "-999",
+        overflow: "hidden",
+        backgroundImage: `linear-gradient(${paletteBlackYellow[0]},
+            ${paletteBlue[4]})`,
+        color: { xs: "white" },
+        px: "5vw",
+        py: "150px",
+        minHeight: "100vh",
       }}
     >
-      <Typography
-        sx={{
-          // margin: "1vw",
-          marginBottom: "5vw",
-          fontSize: "54px",
-          fontWeight: "bold",
-          paddingX: "10vw",
-        }}
-      >
-        Get In Touch
-        <Typography sx={{ fontSize: { xs: "20px", lg: "30px" } }}>
-          {/* Feel free to reach out for discussions, inquiries, or collaborative
-          ideas related to my work. I welcome the opportunity to explore
-          collaborative possibilities and learn from each other's insights and
-          experiences. Your questions and ideas are always appreciated, and I
-          look forward to the potential of working together. */}
-          I am actively seeking a full-time entry-level software engineer role
-          starting May 2025!
-        </Typography>
+      <Typography variant="h2">Get in Touch</Typography>
+      <Typography sx={{ fontSize: { xs: "20px", sm: "20px", md: "18px" } }}>
+        I am actively seeking a full-time entry-level software engineer role
+        starting May 2025!
       </Typography>
+      <Divider sx={{ backgroundColor: "white", m: 1 }}></Divider>
+      
       <Grid
         className="contact"
         container
@@ -225,74 +211,6 @@ export default function Contact() {
             </Typography>
           </Paper>
         </Grid>
-        {/* <Grid item xs={12} sm={6} md={6}> */}
-        {/* <Paper
-            className="contact"
-            onClick={() => window.open("mailto:yuchen.zeng@mail.utoronto.ca")}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                scale: "1.04",
-              },
-            }}
-          >
-            <Typography
-              sx={{
-                display: { xs: "inline-block", sm: "block" },
-                fontSize: "20px",
-              }}
-            >
-              Institution Email
-            </Typography>
-            <IconButton
-              aria-label="school-email"
-              onClick={() => window.open("mailto:yuchen.zeng@mail.utoronto.ca")}
-            >
-              <EmailIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
-            </IconButton>
-            <Typography
-              sx={
-                {
-                  fontSize: "20px",
-                }
-              }
-            >
-              yuchen.zeng@mail.utoronto.ca
-            </Typography>
-          </Paper> */}
-        {/* </Grid>
-        <Grid item xs={12} sm={6} md={6}>
-          <Paper
-            className="contact"
-            sx={{
-              "&:hover": {
-                scale: "1.04",
-              },
-            }}
-          >
-            <Typography
-              sx={{
-                display: { xs: "inline-block", sm: "block" },
-                fontSize: "20px",
-              }}
-            >
-              Discord
-            </Typography>
-            <IconButton aria-label="discord">
-              <ForumIcon
-                sx={{ fontSize: { xs: 50, md: 90 }, color: `${blue[400]}` }}
-              />
-            </IconButton>
-            <Typography
-              sx={{
-                display: { xs: "inline-block", sm: "block" },
-                fontSize: "20px",
-              }}
-            >
-              Maomao#2668
-            </Typography>
-          </Paper>
-        </Grid> */}
       </Grid>
     </Box>
   );

@@ -3,7 +3,6 @@ import { Typography, Paper, IconButton } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 import watch from "../static/watch.jpg";
-import mingarPdf from "../static/mingar.pdf";
 import { paletteBlackRice } from "../../../colorPalettle";
 
 /* The Mingar Component */
@@ -43,7 +42,7 @@ export default function Mingar() {
         MINGAR’s traditional buyers? <br />
       </Typography>
 
-      <IconButton aria-label="mingarPdf" onClick={() => window.open(mingarPdf)}>
+      <IconButton aria-label="mingarPdf" onClick={() => window.open(`${process.env.PUBLIC_URL}/mingar.pdf`, "_blank")}>
         <PictureAsPdfIcon style={{ fontSize: {xs: 30, sm: 50} }} />
         <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
           Open Report

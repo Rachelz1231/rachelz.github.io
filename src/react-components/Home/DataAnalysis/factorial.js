@@ -6,7 +6,6 @@ import SlideshowIcon from "@mui/icons-material/Slideshow";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import facPresentation from "../static/facP.pdf";
 import facPhoto from "../static/facPhoto.png";
-import factPdf from "../static/facReport.pdf";
 import { paletteBlackRice } from "../../../colorPalettle";
 
 /* The Factorial Component */
@@ -47,7 +46,7 @@ export default function Factorial() {
         a computer.
       </Typography>
 
-      <IconButton aria-label="factPdf" onClick={() => window.open(factPdf)}>
+      <IconButton aria-label="factPdf" onClick={() => window.open(`${process.env.PUBLIC_URL}/facReport.pdf`)}>
         <PictureAsPdfIcon
           sx={{ fontSize: { xs: 30, sm: 50 }, color: "white" }}
         />

@@ -3,7 +3,6 @@ import { Typography, Paper, IconButton } from "@mui/material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 import mls from "../static/mls.jpg";
-import pdf from "../static/mlsReport.pdf";
 import { paletteBlackRice } from "../../../colorPalettle";
 
 /* The Mingar Component */
@@ -42,7 +41,7 @@ export default function MlsPlayer() {
         earnings.
       </Typography>
 
-      <IconButton aria-label="pdf" onClick={() => window.open(pdf)}>
+      <IconButton aria-label="pdf" onClick={() => window.open(`${process.env.PUBLIC_URL}/mlsReport.pdf`, "_blank")}>
         <PictureAsPdfIcon style={{ fontSize: {xs: 30, sm: 50} }} />
         <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
         Open Report

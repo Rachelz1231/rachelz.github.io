@@ -3,7 +3,6 @@ import { Typography, Paper, IconButton, Box } from "@mui/material";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import bgImage from "../static/college.jpg";
-import pdf from "../static/302.pdf";
 import { paletteBlackRice } from "../../../colorPalettle";
 
 /* The CollegeAdmission Component */
@@ -43,7 +42,7 @@ export default function CollegeAdmission() {
 
       <IconButton
         aria-label="pdf"
-        onClick={() => window.open(pdf)}
+        onClick={() => window.open(`${process.env.PUBLIC_URL}/collegeAdmission.pdf`, "_blank")}
       >
         <SlideshowIcon style={{ fontSize: {xs: 30, sm: 50} }} />
         <Typography sx={{ fontSize: { xs: "3vw", sm: "20px" } }}>
